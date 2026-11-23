@@ -20,7 +20,44 @@
 .recommendations{background:#f7f8fa}.recGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.recCard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;display:flex;flex-direction:column;min-height:260px}.recQuoteMark{font-size:44px;line-height:1;color:var(--blue);font-weight:900;margin-bottom:8px}.recQuote{font-size:19px;line-height:1.5;letter-spacing:-.01em;margin:0 0 24px}.recPerson{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);display:grid;grid-template-columns:46px 1fr;gap:12px;align-items:center}.recAvatar{width:46px;height:46px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(16,24,40,.12)}.recPerson b{display:block;font-size:15px}.recPerson span{display:block;color:var(--muted);font-size:13px;margin-top:3px}.recSource{display:inline-flex;align-items:center;gap:7px;margin-top:9px;font-size:12px;color:var(--blue);font-weight:750}.recSource:before{content:"in";display:grid;place-items:center;width:19px;height:19px;border-radius:4px;background:#0a66c2;color:#fff;font-weight:900;font-size:11px}.recommendations .sectionHead{margin-bottom:34px}
 @media(min-width:901px){.desktopShot,.appShotGroup{align-self:stretch}}
 @media(max-width:900px){.desktopShot,.appShotGroup{grid-template-rows:auto auto}.showcaseMedia,.appScreens{height:auto}.showcaseMedia img{max-height:440px}.appScreens img{height:auto;max-height:520px}.recGrid{grid-template-columns:1fr}.links a:not(.pill){display:none}.heroGrid,.sectionHead,.caseHero,.evidence,.productShowcase{grid-template-columns:1fr}.portrait{max-width:500px}.quote{left:14px}.metrics{grid-template-columns:1fr 1fr}.metric:nth-child(3){border-left:0}.valueGrid,.story,.process,.aboutGrid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gallery img,.gallery img:first-child{height:260px;grid-row:auto}.journey{grid-template-columns:1fr 1fr;padding-right:0}.journey:before,.journey:after{display:none}.journeyItem{padding-top:28px}.journeyDot{top:0}.hero{padding-top:50px}section{padding:68px 0}}@media(max-width:560px){.journey{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.metric+.metric{border-left:0;border-top:1px solid var(--line);padding-left:0}.gallery,.journey{grid-template-columns:1fr}.quote{position:static;width:auto;margin-top:12px}.hero h1{font-size:46px}.case h3{font-size:42px}}
-</style></head><body>
+/* MOBILE METRICS FIX */
+@media (max-width:560px){
+
+  .metrics{
+    grid-template-columns:1fr;
+    margin-top:32px;
+    border-radius:18px;
+  }
+
+  .metric{
+    padding:24px 22px !important;
+  }
+
+  .metric + .metric{
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding-left:22px !important;
+  }
+
+  .metricTopic{
+    margin:0 0 8px 0;
+    font-size:11px;
+    line-height:1.3;
+  }
+
+  .num{
+    margin:0;
+    font-size:clamp(30px,9vw,40px);
+    line-height:1.08;
+    letter-spacing:-0.035em;
+  }
+
+  .label{
+    margin:7px 0 0 0;
+    font-size:14px;
+    line-height:1.4;
+  }
+}</style></head><body>
 <nav class="nav"><div class="wrap navin"><div class="brand">HARSHINI MOHAN KUMAR</div><div class="links"><a href="#work">Work</a><a href="#how">How I work</a><a href="#recommendations">Recommendations</a><a href="#about">About</a><a class="pill" href="mailto:harshinimohan.pm@gmail.com">Contact</a></div></div></nav>
 <header class="hero"><div class="wrap"><div class="heroGrid"><div><div class="eyebrow">Product Manager · 5+ YEARS · B2C marketplaces & consumer products · Berlin</div><h1>I turn <em>customer friction</em> into products that scale.</h1><p class="lede">From retail leadership to scaling a two-sided marketplace to 1M users, I’ve focused on one thing: understanding users, removing friction, and turning insight into measurable outcomes.</p><div class="cta"><a class="btn primary" href="#work">Explore case studies</a><a class="btn" href="mailto:harshinimohan.pm@gmail.com">Let’s talk</a></div><div class="mini">CSPO · MBA · MSc Advanced Computer Science · Valid German work permit</div></div><div class="portraitWrap"><img class="portrait" src="assets/profile.jpg" alt="Harshini Mohan Kumar"><div class="quote">Curiosity to discover.<br>Empathy to understand.<br>Ownership to deliver.<small>My product philosophy</small></div></div></div><div class="metrics"><div class="metric"><div class="metricTopic">Marketplace scale</div><div class="num">1M</div><div class="label">unique users who booked</div></div><div class="metric"><div class="metricTopic">App conversion</div><div class="num">25% → 32%+</div><div class="label">booking conversion</div></div><div class="metric"><div class="metricTopic">Partner onboarding</div><div class="num">6+ weeks → 1 to 3 days</div><div class="label">end-to-end onboarding time</div></div><div class="metric"><div class="metricTopic">Partner network</div><div class="num">1,000+</div><div class="label">partners onboarded</div></div></div></div></header>
 <section><div class="wrap"><div class="sectionHead"><div class="eyebrow">What I bring</div><div><h2>Marketplace thinking, growth discipline and hands-on product leadership.</h2><p>I’m strongest where customer experience, business outcomes and operational complexity meet; especially in B2C marketplaces and consumer apps.</p></div></div><div class="valueGrid"><div class="card"><div class="valueTitle"><span class="valueIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16v10H4z"/><path d="M3 10l2-5h14l2 5"/><path d="M8 20v-6h8v6"/></svg></span><b>Marketplace builder</b></div><p>Founding team member of Decathlon Play. Helped take a two-sided marketplace from early stage to 1M users who booked.</p></div><div class="card"><div class="valueTitle"><span class="valueIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V9"/><path d="M10 18V12"/><path d="M16 18V6"/><path d="M3 7l6-3 4 2 7-4"/><path d="M17 2h3v3"/></svg></span><b>Growth through product</b></div><p>Improved conversion through mobile-first journeys, analytics, experimentation and continuous friction removal.</p></div><div class="card"><div class="valueTitle"><span class="valueIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="16" cy="17" r="3"/><path d="M10.5 10.5l3-1.5M10.5 13.5l3 1.5"/></svg></span><b>Operational transformer</b></div><p>Turned a dependency-heavy partner process into self-service onboarding with automation and human review where it mattered.</p></div></div></div></section>
