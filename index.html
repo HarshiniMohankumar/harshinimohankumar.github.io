@@ -777,6 +777,61 @@
 
 .portrait-details {
   margin-top: 16px;
+}/* Compact product philosophy card */
+
+.portraitWrap .quote {
+  width: 225px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  left: -32px;
+  bottom: 24px;
+  display: grid;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.quote-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.quote-row svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: #2843c7;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+.quote-row strong {
+  font-weight: 650;
+}
+
+.portraitWrap .quote small {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 4px;
+  color: #667085;
+}
+
+@media (max-width: 900px) {
+  .portraitWrap .quote {
+    left: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .portraitWrap .quote {
+    width: fit-content;
+    max-width: 100%;
+  }
 }
 </style></head><body>
 <nav class="nav"><div class="wrap navin"><a class="brand" href="#" aria-label="Back to top">HARSHINI MOHAN KUMAR</a><div class="links"><a href="#work">Work</a><a href="#how">How I work</a><a href="#recommendations">Recommendations</a><a href="#about">About</a><a class="pill" href="#contact">Contact</a></div></div></nav>
@@ -810,12 +865,37 @@
           <img class="portrait" src="assets/profile.jpg"
                alt="Harshini Mohan Kumar">
 
-          <div class="quote">
-            Curiosity to discover.<br>
-            Empathy to understand.<br>
-            Ownership to deliver.
-            <small>My product philosophy</small>
-          </div>
+         <div class="quote">
+
+  <div class="quote-row">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="11" cy="11" r="7"/>
+      <path d="m16 16 5 5"/>
+    </svg>
+    <span><strong>Curiosity</strong> to discover.</span>
+  </div>
+
+  <div class="quote-row">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7
+      l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6
+      a5.5 5.5 0 0 0 0-7.8z"/>
+    </svg>
+    <span><strong>Empathy</strong> to understand.</span>
+  </div>
+
+  <div class="quote-row">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="9"/>
+      <circle cx="12" cy="12" r="5.5"/>
+      <circle cx="12" cy="12" r="2"/>
+    </svg>
+    <span><strong>Ownership</strong> to deliver.</span>
+  </div>
+
+  <small>My product philosophy</small>
+
+</div>
         </div>
 
         <div class="portrait-details">
