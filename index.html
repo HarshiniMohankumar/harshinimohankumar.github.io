@@ -832,6 +832,183 @@
     width: fit-content;
     max-width: 100%;
   }
+}/* HOW I WORK — LIFECYCLE CARDS */
+
+#how .step {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 18px;
+  min-width: 0;
+}
+
+#how .step p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#how .step-output {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+#how .step-output span {
+  display: block;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #2843c7;
+  margin-bottom: 5px;
+}
+
+#how .step-output strong {
+  display: block;
+  color: #101828;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* UNIFIED PRODUCT PRACTICE PANEL */
+
+.how-practice {
+  margin-top: 28px;
+  background: #f7f8fa;
+  border-radius: 22px;
+  padding: 28px;
+}
+
+.how-practice > h3 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 5px;
+  color: #101828;
+}
+
+.how-practice-intro {
+  font-size: 14px;
+  font-weight: 400;
+  color: #667085;
+  margin: 0 0 24px;
+}
+
+.how-practice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 36px;
+}
+
+.how-practice-item {
+  min-width: 0;
+}
+
+.how-practice-item:nth-child(n+3) {
+  border-top: 1px solid #dfe3eb;
+  padding-top: 22px;
+}
+
+.how-practice-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.how-practice-title h4 {
+  color: #101828;
+  font-size: 16px;
+  font-weight: 650;
+  margin: 0;
+}
+
+.how-practice-title svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: #2843c7;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+.how-practice-item p {
+  color: #667085;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+
+/* Framework and method tags */
+
+.practice-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.practice-tags span {
+  display: inline-flex;
+  background: #ffffff;
+  border: 1px solid #e2e5eb;
+  border-radius: 6px;
+  padding: 5px 9px;
+  color: #475467;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Toolkit categories */
+
+.practice-tool-group {
+  margin-top: 10px;
+}
+
+.practice-tool-group strong {
+  display: block;
+  color: #344054;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.practice-tool-group p {
+  margin: 0;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 900px) {
+  #how .process {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #how .step:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  #how .process {
+    grid-template-columns: 1fr;
+  }
+
+  .how-practice {
+    padding: 22px;
+  }
+
+  .how-practice-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .how-practice-item + .how-practice-item {
+    border-top: 1px solid #dfe3eb;
+    padding-top: 20px;
+  }
 }
 </style></head><body>
 <nav class="nav"><div class="wrap navin"><a class="brand" href="#" aria-label="Back to top">HARSHINI MOHAN KUMAR</a><div class="links"><a href="#work">Work</a><a href="#how">How I work</a><a href="#recommendations">Recommendations</a><a href="#about">About</a><a class="pill" href="#contact">Contact</a></div></div></nav>
@@ -956,33 +1133,176 @@
 <section id="work" class="case"><div class="wrap"><div class="caseHero decathlonCaseHero"><div><div class="eyebrow">Case study 01 · Senior Product Manager · 2020 to 2023</div><h3>Decathlon Play</h3><p class="caseLead">A two-sided B2B2C marketplace helping people discover, learn and play sport through events, coaching, playgrounds and community-led experiences. I was the sole PM, working across web, Android, iOS, partner management app and onboaridng website.</p><div class="caseMeta"><span class="chip">Two-Sided Marketplace</span><span class="chip">Product Vision & Strategy</span><span class="chip">Discovery</span><span class="chip">Conversion</span><span class="chip">Analytics</span><span class="chip">Personalization</span></div></div><div class="mobileWebIntro"><img src="assets/mobile-web-phone.png" alt="Decathlon Play mobile web homepage"><div class="caption"><strong>Mobile web:</strong> quick discovery and booking for users arriving through search, QR codes or shared links.</div></div></div><div class="story"><div class="card"><div class="tag">THE FRICTION</div><h4>A fragmented sports ecosystem</h4><p>People lacked a single place to discover and book opportunities to learn, play and participate in sport. Partners had no unified way to reach customers.</p></div><div class="card"><div class="tag">THE APPROACH</div><h4>Make discovery and booking effortless</h4><p>I prioritised a mobile-first experience, simplified the booking journey and focused the roadmap on better discovery, trust and conversion.</p></div><div class="card"><div class="tag">WHAT CHANGED</div><h4>From fragmented discovery to one connected journey</h4><p>Users could discover, compare and book sport opportunities in one place, with simpler sign-up, personalised discovery and stronger trust through ratings, reviews and sharing.</p></div><div class="card impactCard"><div class="tag" style="color:#6ee7b7">OUTCOMES</div><div class="impact">50K → 1M</div><p>unique users who booked</p><div class="impact">25% → 32%+</div><p>app booking conversion</p><div class="impact">13 → 72</div><p>store platform adoption</p><div class="impact">85%+</div><p>CSAT</p></div></div><div class="productShowcase"><div class="desktopShot"><div class="showcaseMedia"><img src="assets/web-home.png" alt="Decathlon Play desktop marketplace experience"></div><div class="caption"><strong>Desktop web:</strong>&nbsp;location-led discovery brought events, coaching and playgrounds across cities into one searchable marketplace.</div></div><div class="appShotGroup"><div class="appScreens"><img src="assets/app-home-tight.png" alt="Decathlon Play app home experience"><img src="assets/app-services-tight.png" alt="Decathlon Play app services experience"></div><div class="caption"><strong>Native app:</strong>&nbsp;service-led discovery for events, challenges, playgrounds, coaching and workshops, designed to move users from intent to booking with fewer steps.</div></div></div></div></section>
 <section class="case case2"><div class="wrap"><div class="caseHero"><div><div class="eyebrow">Case study 02 · Product Manager · 2018 to 2020</div><h3>Partner Platform & Automation</h3><p class="caseLead">The supply-side platform behind Decathlon Play, designed to simplify partner onboarding and empower coaches, event organisers and facility providers to independently manage and grow their sporting offerings through self-service tools and automation.</p><div class="caseMeta"><span class="chip">0→1 platform</span><span class="chip">B2B Platform</span><span class="chip">KYC & Compliance</span><span class="chip">Workflow Automation</span><span class="chip">Supply-Side Growth</span></div></div><div class="visual"><img src="assets/afs.png" alt="All For Sport partner platform"></div></div><div class="story"><div class="card"><div class="tag">THE FRICTION</div><h4>A bottleneck to marketplace growth</h4><p>Onboarding was manual and dependency-heavy. Extensive paperwork and verification created operational bottlenecks, delaying partner activation and limiting marketplace growth.</p></div><div class="card"><div class="tag">DISCOVERY</div><h4>Separate judgment from repetition</h4><p>I mapped the journey and <strong>seven manual decision points</strong>, then identified which decisions truly needed people and which could be automated safely.</p></div><div class="card"><div class="tag">THE SOLUTION</div><h4>Self-service with guardrails</h4><p></p><p>I introduced self-service onboarding and automated KYC, fraud scoring and document validation, reserving human intervention for exceptions and escalations.</p></div><div class="card impactCard"><div class="tag" style="color:#6ee7b7">OUTCOMES</div><div class="impact">1 to 3 days</div><p>end-to-end onboarding</p><div class="impact">630+</div><p>operational hours saved yearly</p><div class="impact">1,000+</div><p>partners onboarded</p><div class="impact">4.5+ / 5</div><p>partner satisfaction</p></div></div><div class="evidence"><div><img class="contain" src="assets/recognition-new.png" alt="Decathlon recognition for partner onboarding work"><div class="caption"><strong>Recognition for impact:</strong> recognised internally for reducing partner onboarding from 4–6 weeks to 1–3 days, improving partner happiness and accelerating adoption.</div></div><div><img src="assets/partners.jpg" alt="Working with partners"><div class="caption"><strong>Working with partners:</strong> Meeting partners firsthand to understand their pain points, identify what they needed to deliver their services, and translate those insights into product solutions.</div></div></div><div class="transitionNote"><strong>From platform to ecosystem.</strong> Building the product was only part of the work. Scaling it meant helping teams, partners and stakeholders understand it, trust it and use it confidently.</div></div></section>
 <section class="behindProduct"><div class="wrap"><div class="sectionHead"><div class="eyebrow">Behind the product</div><div><h2>Product is a team sport.</h2><p>I believe building meaningful products starts with staying close to the people who use, build and support them: users, partners, retail teams, engineering, design, operations and business stakeholders.</p></div></div><div class="gallery"><img src="assets/workshop.jpg" alt="Cross-functional workshop"><img src="assets/store.jpg" alt="Decathlon store visit"><img src="assets/leadership.jpg" alt="Cross-functional team"><img src="assets/team.jpg" alt="Product team"></div></div></section>
-<section id="how"><div class="wrap"><div class="sectionHead"><div class="eyebrow">How I work</div><div><h2>From discovery to meaningful impact</h2><p>My approach combines user understanding, strategic prioritisation, collaborative execution and continuous learning to deliver products that create measurable value for users and the business.</p></div></div><div class="process"><div class="step"><div class="n">01</div><h4>Discover</h4><p>User and partner interviews, journey mapping, behavioural data and the repeated question: “why?”</p></div><div class="step"><div class="n">02</div><h4>Define</h4><p>Frame the problem, prioritise opportunities and define product KPIs aligned with business objectives.</p></div><div class="step"><div class="n">03</div><h4>Build & Launch</h4><p>Collaborate with engineering, design, QA, marketing and operations to validate solutions, deliver iteratively and ensure launch readiness.</p></div><div class="step"><div class="n">04</div><h4>Measure</h4><p>Track defined KPIs, analyse conversion funnels and cohorts to understand user behaviour, evaluate product impact and uncover opportunities for improvement.</p></div><div class="step"><div class="n">05</div><h4>Improve</h4><p>Translate post-launch insights and user feedback into roadmap priorities, validate improvements through experimentation and continuously optimise the product.</p></div></div><div class="toolkit"><div class="pm-practice-grid">
+<section id="how">
+  <div class="wrap">
 
-  <div class="pm-practice-item">
-    <h4>Cadence</h4>
-    <p>26 two-week sprints/year across web, Android,
-      iOS and partner platforms.</p>
+    <div class="sectionHead">
+      <div class="eyebrow">How I work</div>
+      <div>
+        <h2>From discovery to meaningful impact</h2>
+        <p>Combining customer insight, strategic prioritisation,
+          collaborative execution and continuous learning to deliver
+          measurable product outcomes.</p>
+      </div>
+    </div>
+
+    <div class="process">
+
+      <div class="step">
+        <div class="n">01</div>
+        <h4>Discover</h4>
+        <p>Understand user needs, partner pain points and
+          behavioural patterns.</p>
+        <div class="step-output">
+          <span>Output</span>
+          <strong>Validated problem</strong>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="n">02</div>
+        <h4>Define</h4>
+        <p>Prioritise opportunities, shape the roadmap and
+          define success metrics.</p>
+        <div class="step-output">
+          <span>Output</span>
+          <strong>Roadmap &amp; KPIs</strong>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="n">03</div>
+        <h4>Build &amp; Launch</h4>
+        <p>Align cross-functional teams, validate solutions
+          and deliver iteratively.</p>
+        <div class="step-output">
+          <span>Output</span>
+          <strong>Launch-ready product</strong>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="n">04</div>
+        <h4>Measure</h4>
+        <p>Analyse conversion, engagement, retention and
+          product performance.</p>
+        <div class="step-output">
+          <span>Output</span>
+          <strong>Evidence of impact</strong>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="n">05</div>
+        <h4>Improve</h4>
+        <p>Turn insights into experiments, roadmap priorities
+          and product iterations.</p>
+        <div class="step-output">
+          <span>Output</span>
+          <strong>Next opportunity</strong>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="how-practice">
+
+      <h3>My product practice</h3>
+      <p class="how-practice-intro">
+        The frameworks, methods and tools behind my product decisions.
+      </p>
+
+      <div class="how-practice-grid">
+
+        <div class="how-practice-item">
+          <div class="how-practice-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="16" rx="3"/>
+              <path d="M16 3v4M8 3v4M3 10h18M8 15h2M14 15h2"/>
+            </svg>
+            <h4>Operating rhythm</h4>
+          </div>
+
+          <p>26 two-week sprints annually across web, Android,
+            iOS and partner platforms.</p>
+
+          <div class="practice-tags">
+            <span>Agile delivery</span>
+            <span>Sprint planning</span>
+            <span>Backlog management</span>
+            <span>Release planning</span>
+          </div>
+        </div>
+
+        <div class="how-practice-item">
+          <div class="how-practice-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m12 3 9 5-9 5-9-5 9-5Z"/>
+              <path d="M3 12l9 5 9-5M3 16l9 5 9-5"/>
+            </svg>
+            <h4>Strategy &amp; prioritisation</h4>
+          </div>
+
+          <p>Connecting customer needs, business objectives
+            and product decisions.</p>
+
+          <div class="practice-tags">
+            <span>5 Whys</span>
+            <span>RICE</span>
+            <span>MoSCoW</span>
+            <span>OKRs</span>
+            <span>Roadmapping</span>
+          </div>
+        </div>
+
+        <div class="how-practice-item">
+          <div class="how-practice-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 3v18h18M7 16l5-6 4 3 5-8"/>
+            </svg>
+            <h4>Discovery &amp; experimentation</h4>
+          </div>
+
+          <p>Understanding behaviour and validating decisions
+            through evidence.</p>
+
+          <div class="practice-tags">
+            <span>User interviews</span>
+            <span>Journey mapping</span>
+            <span>Usability testing</span>
+            <span>A/B testing</span>
+            <span>Heatmaps</span>
+            <span>Funnel analysis</span>
+            <span>Cohort analysis</span>
+          </div>
+        </div>
+
+        <div class="how-practice-item">
+          <div class="how-practice-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="7" width="18" height="14" rx="3"/>
+              <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2
+              M3 13h18M10 12v3h4v-3"/>
+            </svg>
+            <h4>Product toolkit</h4>
+          </div>
+
+          <div class="practice-tool-group">
+            <strong>Delivery &amp; collaboration</strong>
+            <p>Jira · Confluence · Figma · Miro</p>
+          </div>
+
+          <div class="practice-tool-group">
+            <strong>Analytics &amp; experimentation</strong>
+            <p>Google Analytics · Looker Studio · Hotjar · Mixpanel</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
-
-  <div class="pm-practice-item">
-    <h4>Frameworks</h4>
-    <p>5 Whys · RICE · MoSCoW · OKRs</p>
-  </div>
-
-  <div class="pm-practice-item">
-    <h4>Methods</h4>
-    <p>User research · Journey mapping · A/B testing ·
-      Funnel analysis · Cohort analysis</p>
-  </div>
-
-  <div class="pm-practice-item">
-    <h4>Toolkit</h4>
-    <p>Jira · Confluence · Figma · Miro · Google Analytics ·
-      Looker Studio · Hotjar · Mixpanel</p>
-  </div>
-
-</div></div></div></section>
-
+</section>
 <section id="recommendations" class="recommendations">
   <div class="wrap">
 
