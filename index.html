@@ -516,7 +516,166 @@
   #about .about-profile-card > .about-feature {
     flex: 1 0 auto;
   }
-}</style></head><body>
+}/* Professional career journey */
+
+.career-journey {
+  margin-top: 44px;
+}
+
+.career-journey-label {
+  color: #9aa8ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.career-journey-panel {
+  background: #1f2937;
+  border-radius: 22px;
+  padding: 30px;
+}
+
+.career-journey-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 8px;
+  padding-top: 32px;
+}
+
+/* Connecting timeline */
+
+.career-journey-track::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  right: 6px;
+  height: 2px;
+  background: linear-gradient(
+    90deg, #475569, #64748b, #2843c7
+  );
+}
+
+.career-journey-track::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 4px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 9px solid #2843c7;
+}
+
+.career-milestone {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.career-dot {
+  position: absolute;
+  top: -31px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: 4px solid #1f2937;
+  border-radius: 50%;
+  background: #2843c7;
+  box-shadow: 0 0 0 2px #64748b;
+}
+
+.career-stage {
+  color: #9aa8ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.career-date {
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.career-milestone h4 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.career-area {
+  color: #9aa8ff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.career-milestone p {
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.65;
+  margin: 4px 0 0;
+}
+
+/* Align the text across all four milestones */
+
+@media (min-width: 1025px) {
+  .career-journey-track {
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .career-milestone {
+    display: grid;
+    grid-row: span 5;
+    grid-template-rows: subgrid;
+  }
+}
+
+/* Tablet layout */
+
+@media (max-width: 1024px) {
+  .career-journey-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    padding-top: 0;
+  }
+
+  .career-journey-track::before,
+  .career-journey-track::after,
+  .career-dot {
+    display: none;
+  }
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+  .career-journey-track {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .career-journey-panel {
+    padding: 24px;
+  }
+
+  .career-milestone:not(:last-child) {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #374151;
+  }
+}
+</style></head><body>
 <nav class="nav"><div class="wrap navin"><div class="brand">HARSHINI MOHAN KUMAR</div><div class="links"><a href="#work">Work</a><a href="#how">How I work</a><a href="#recommendations">Recommendations</a><a href="#about">About</a><a class="pill" href="#contact">Contact</a></div></div></nav>
 <header class="hero"><div class="wrap"><div class="heroGrid"><div><div class="eyebrow">Product Manager · 5+ YEARS · B2C marketplaces & consumer products · Berlin</div><h1>I turn <em>customer friction</em> into products that scale.</h1><p class="lede">From retail leadership to scaling a two-sided marketplace to 1M users, I’ve focused on one thing: understanding users, removing friction, and turning insight into measurable outcomes.</p><div class="cta"><a class="btn primary" href="#work">Explore case studies</a><a class="btn" href="mailto:harshinimohan.pm@gmail.com">Let’s talk</a></div><div class="mini">CSPO · MBA · MSc Advanced Computer Science · Valid German Work Permit</div></div><div class="portraitWrap"><img class="portrait" src="assets/profile.jpg" alt="Harshini Mohan Kumar"><div class="quote">Curiosity to discover.<br>Empathy to understand.<br>Ownership to deliver.<small>My product philosophy</small></div></div></div><div class="metrics"><div class="metric"><div class="metricTopic">Marketplace scale</div><div class="num">1M</div><div class="label">unique users who booked</div></div><div class="metric"><div class="metricTopic">App conversion</div><div class="num">25% → 32%+</div><div class="label">booking conversion</div></div><div class="metric"><div class="metricTopic">Partner onboarding</div><div class="num">4–6 weeks →<br>1–3 days</div><div class="label">end-to-end onboarding time</div></div><div class="metric"><div class="metricTopic">Partner network</div><div class="num">1,000+</div><div class="label">partners onboarded</div></div></div></div></header>
 <section><div class="wrap"><div class="sectionHead"><div class="eyebrow">What I bring</div><div><h2>Marketplace thinking, growth discipline and hands-on product leadership.</h2><p>I’m strongest where customer experience, business outcomes and operational complexity meet, especially in B2C marketplaces and consumer apps.</p></div></div><div class="valueGrid"><div class="card"><div class="valueTitle"><span class="valueIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16v10H4z"/><path d="M3 10l2-5h14l2 5"/><path d="M8 20v-6h8v6"/></svg></span><b>Marketplace builder</b></div><p>Founding team member of Decathlon Play. Helped take a two-sided marketplace from early stage to 1M users who booked.</p></div><div class="card"><div class="valueTitle"><span class="valueIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V9"/><path d="M10 18V12"/><path d="M16 18V6"/><path d="M3 7l6-3 4 2 7-4"/><path d="M17 2h3v3"/></svg></span><b>Growth through product</b></div><p>Increased conversion through mobile-first journeys, product optimisation, analytics, experimentation and continuous friction removal.</p></div><div class="card"><div class="valueTitle"><span class="valueIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="16" cy="17" r="3"/><path d="M10.5 10.5l3-1.5M10.5 13.5l3 1.5"/></svg></span><b>Operational transformer</b></div><p>Scaled partner onboarding by replacing manual hand-holding with self-service, automation and targeted human review.</p></div></div></div></section>
@@ -965,51 +1124,55 @@
 
 </div>
 </div>
-    <div class="journey">
+ <div class="career-journey">
 
-      <div class="journeyItem">
-        <span class="journeyDot"></span>
-        <div class="journeyKicker">Foundation</div>
-        <h4>Retail leadership</h4>
-        <p>
-          Learned customer behaviour up close while owning
-          commercial performance, P&amp;L and a 12-person team.
-        </p>
+  <div class="career-journey-label">
+    My professional journey
+  </div>
+
+  <div class="career-journey-panel">
+    <div class="career-journey-track">
+
+      <div class="career-milestone">
+        <span class="career-dot"></span>
+        <div class="career-stage">Foundation</div>
+        <div class="career-date">2016–2017</div>
+        <h4>Department Manager</h4>
+        <div class="career-area">Retail leadership</div>
+        <p>Owned P&amp;L, led a 12-person team and understood customer needs first-hand.</p>
       </div>
 
-      <div class="journeyItem">
-        <span class="journeyDot"></span>
-        <div class="journeyKicker">0 → 1</div>
-        <h4>Partner platform</h4>
-        <p>
-          Moved into product by turning manual partner onboarding
-          into a scalable self-service and automation platform.
-        </p>
+      <div class="career-milestone">
+        <span class="career-dot"></span>
+        <div class="career-stage">0 → 1</div>
+        <div class="career-date">2018–2020</div>
+        <h4>Product Manager</h4>
+        <div class="career-area">Partner platform</div>
+        <p>Transformed manual partner onboarding into a scalable self-service platform.</p>
       </div>
 
-      <div class="journeyItem">
-        <span class="journeyDot"></span>
-        <div class="journeyKicker">Scale</div>
-        <h4>Decathlon Play</h4>
-        <p>
-          Led B2C marketplace growth across web and mobile,
-          scaling the product to 1M users who booked.
-        </p>
+      <div class="career-milestone">
+        <span class="career-dot"></span>
+        <div class="career-stage">Scale</div>
+        <div class="career-date">2020–2023</div>
+        <h4>Product Leader</h4>
+        <div class="career-area">Decathlon Play</div>
+        <p>Scaled a B2C sports marketplace to 1M users who booked.</p>
       </div>
 
-      <div class="journeyItem">
-        <span class="journeyDot"></span>
-        <div class="journeyKicker">Next chapter</div>
-        <h4>Berlin</h4>
-        <p>
-          Completed my MBA and am now bringing that customer,
-          marketplace and growth experience to product teams in Germany.
-        </p>
+      <div class="career-milestone">
+        <span class="career-dot"></span>
+        <div class="career-stage">Next chapter</div>
+        <div class="career-date">2025–Present</div>
+        <h4>MBA Graduate</h4>
+        <div class="career-area">Berlin, Germany</div>
+        <p>Bringing customer, marketplace and product growth experience to teams in Germany.</p>
       </div>
 
     </div>
-
   </div>
+
+</div>  
 </section>
 <footer id="contact" class="footer">
   <div class="wrap">
