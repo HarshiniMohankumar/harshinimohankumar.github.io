@@ -436,6 +436,57 @@
 
 #about .passion-video-links a:hover {
   color: #ffffff;
+}#about .about-profile-card > .about-note,
+#about .about-profile-card > .passion-video-links {
+  border-top: 1px solid #374151;
+  padding-top: 16px;
+  margin: auto 0 0;
+}
+
+#about .passion-video-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px 18px;
+}
+
+#about .passion-intro {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #cbd5e1;
+}
+
+#about .passion-video-links a svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  flex-shrink: 0;
+}
+
+@media (min-width: 901px) {
+  #about .aboutGrid {
+    grid-template-rows: repeat(6, auto);
+    row-gap: 20px;
+  }
+
+  #about .about-profile-card {
+    display: grid;
+    grid-row: span 6;
+    grid-template-rows: subgrid;
+  }
+
+  #about .about-profile-card > .about-note,
+  #about .about-profile-card > .passion-video-links {
+    margin: 0;
+    align-self: stretch;
+  }
 }</style></head><body>
 <nav class="nav"><div class="wrap navin"><div class="brand">HARSHINI MOHAN KUMAR</div><div class="links"><a href="#work">Work</a><a href="#how">How I work</a><a href="#recommendations">Recommendations</a><a href="#about">About</a><a class="pill" href="#contact">Contact</a></div></div></nav>
 <header class="hero"><div class="wrap"><div class="heroGrid"><div><div class="eyebrow">Product Manager · 5+ YEARS · B2C marketplaces & consumer products · Berlin</div><h1>I turn <em>customer friction</em> into products that scale.</h1><p class="lede">From retail leadership to scaling a two-sided marketplace to 1M users, I’ve focused on one thing: understanding users, removing friction, and turning insight into measurable outcomes.</p><div class="cta"><a class="btn primary" href="#work">Explore case studies</a><a class="btn" href="mailto:harshinimohan.pm@gmail.com">Let’s talk</a></div><div class="mini">CSPO · MBA · MSc Advanced Computer Science · Valid German Work Permit</div></div><div class="portraitWrap"><img class="portrait" src="assets/profile.jpg" alt="Harshini Mohan Kumar"><div class="quote">Curiosity to discover.<br>Empathy to understand.<br>Ownership to deliver.<small>My product philosophy</small></div></div></div><div class="metrics"><div class="metric"><div class="metricTopic">Marketplace scale</div><div class="num">1M</div><div class="label">unique users who booked</div></div><div class="metric"><div class="metricTopic">App conversion</div><div class="num">25% → 32%+</div><div class="label">booking conversion</div></div><div class="metric"><div class="metricTopic">Partner onboarding</div><div class="num">4–6 weeks →<br>1–3 days</div><div class="label">end-to-end onboarding time</div></div><div class="metric"><div class="metricTopic">Partner network</div><div class="num">1,000+</div><div class="label">partners onboarded</div></div></div></div></header>
@@ -779,8 +830,10 @@
             <path d="m8 12-2 9 6-3 6 3-2-9M10 8l1.5 1.5L14 7"/>
           </svg>
           <div>
-            <strong>CSPO</strong>
-            <span>Certified Scrum Product Owner</span>
+            <strong>Professional development</strong>
+<span>Product Management Programme · ISB Executive Education</span>
+<span>Scrum Product Owner Certification (CSPO) · Scrum Alliance</span>
+<span>Foundations of User Experience (UX) Design · Google</span>
           </div>
         </div>
 
@@ -809,41 +862,9 @@
       <path d="M12 21 3.5 12.5a5 5 0 0 1 8.5-5 5 5 0 0 1 8.5 5L12 21Z"/>
       <path d="M3 12h5l2-4 3 8 2-4h6"/>
     </svg>
-
     <div>
       <strong>Active &amp; creative</strong>
-      <span>Singing, painting, swimming, running, trekking and scuba diving (certified)</span>
-
-      <div class="passion-video-links">
-  <p class="passion-intro">A little glimpse into my world.</p>
-
-  <a href="https://www.youtube.com/@hash92/videos"
-     target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="9"/>
-      <path d="m10 8 6 4-6 4Z"/>
-    </svg>
-    Singing
-  </a>
-
-  <a href="https://www.youtube.com/shorts/hKD7It--a5s"
-     target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="9"/>
-      <path d="m10 8 6 4-6 4Z"/>
-    </svg>
-    Scuba diving
-  </a>
-
-  <a href="https://www.youtube.com/shorts/6JSa9mi958I"
-     target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="9"/>
-      <path d="m10 8 6 4-6 4Z"/>
-    </svg>
-    Trekking
-  </a>
-</div>
+      <span>Singing, painting, swimming, running, trekking and certified scuba diving.</span>
     </div>
   </div>
 
@@ -878,6 +899,39 @@
       <strong>Building for the joy of it</strong>
       <span>Mental wellness companion and boutique marketplace</span>
     </div>
+  </div>
+
+  <div class="passion-video-links">
+
+    <p class="passion-intro">A little glimpse into my world.</p>
+
+    <a href="https://www.youtube.com/@hash92/videos"
+       target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="m10 8 6 4-6 4Z"/>
+      </svg>
+      Singing
+    </a>
+
+    <a href="https://www.youtube.com/shorts/hKD7It--a5s"
+       target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="m10 8 6 4-6 4Z"/>
+      </svg>
+      Scuba diving
+    </a>
+
+    <a href="https://www.youtube.com/shorts/6JSa9mi958I"
+       target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="m10 8 6 4-6 4Z"/>
+      </svg>
+      Trekking
+    </a>
+
   </div>
 
 </div>
